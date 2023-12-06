@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiorquezometro V 1.0</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>MAIORQUEZOMETRO V 1.0</h1>
+    </header>
+    <title>
+        Digite um número no "Campo A" e depois digite um número maior no "Campo B"
+    </title>
+    <div class="formulario">
+        <form id="campos">
+            <p>campo A</p>
+            <input id="campoA" type="number" placeholder="Nº A" required>
+            <p>campo B</p>
+            <input id="campoB" type="number" placeholder="Nº B" required>
+            <button type="submit" onclick="validationMachine()">Testar</button>
+        </form>
+    </div>
+    <div class="message">
+        <section id="standart">
+            <h3>Aguardando entrada de dados</h3>
+        </section>
+        <section id="error">
+            <h3>Deu ruim! o campo B está menor ou igual que o A</h3>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
