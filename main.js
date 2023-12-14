@@ -1,6 +1,6 @@
 function validationMachine() {
-    let campoAvalor = document.getElementById("campoA").value;
-    let campoBvalor = document.getElementById("campoB").value;
+    let campoAvalor = parseFloat(document.getElementById("campoA").value);
+    let campoBvalor = parseFloat(document.getElementById("campoB").value);
 
     if (campoBvalor <= campoAvalor) {
         alert("O valor de B não pode ser igual ou menor do que o de A, favor corrigir!");
